@@ -79,27 +79,27 @@ export default function Index() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className='semi-bold text-4xl'>Crypto Converter</h1>
+      <h1 className='font-bold text-4xl'>Crypto Converter</h1>
       <div className="w-29 p-6 rounded-lg shadow bg-slate-50 border-slate-100 dark:bg-gray-800 dark:border-gray-700 ">
         <div className="sm:flex justify-between items-center ">
           <div>
-            <label className="block mb-2 text-sm font-medium text-white ml-2">Nep</label>
+            <label className="block mb-2 text-sm font-medium dark:text-white text-black ml-2">Nep</label>
             <div className="flex">
               <input value={nep} onChange={handleNepChange} min={0} type="number" id="large-input" className="block  w-full p-5 mb-3 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
             </div>
-            <p className='text-white text-xs'>1 Nep = 3 Busd</p>
+            <p className='text-dark  dark:text-white text-xs'>1 Nep = 3 Busd</p>
           </div>
           <div className='pl-10 pr-10 mt-5' >
           </div>
           <div>
-            <label className="block mb-2 text-sm font-medium text-white">Busd</label>
+            <label className="block mb-2 text-sm font-medium dark:text-white text-black">Busd</label>
             <input value={busd} onChange={handleBusdChange} type="number" min={0} id="large-input" className="block w-full p-5 mb-3  text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-            <p className='text-white text-xs'>1 Busd = .33 Nep</p>
+            <p className='text-black dark:text-white text-xs'>1 Busd = 9.33 Nep</p>
           </div>
         </div>
         <div className='mt-10 '>
-          <p onClick={openModalHandler} className='text-blue-50 text-center mb-1 underline cursor-pointer'>Wallet Details</p>
-          <p className='text-white text-xs text-center'>Last updated on {getDate()} </p>
+          <p onClick={openModalHandler} className='dark:text-while text-back text-center mb-1 underline cursor-pointer'>Wallet Details</p>
+          <p className='text-black dark:text-white text-xs text-center'>Last updated on {getDate()} </p>
         </div>
       </div>
       <div>
