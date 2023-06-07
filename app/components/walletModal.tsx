@@ -86,11 +86,10 @@ export default function WalletModal({ isOpen, onClose, }: {
   const handleConnect = () => {
     setIsConnecting(true)
     window.ethereum.request({
-      method: "eth_accounts",
+      method: "eth_requestAccounts",
     })
       .then((accounts: []) => {
         console.log(accounts);
-
         setError(false)
         updateWallet(accounts)
         setIsConnected(true)

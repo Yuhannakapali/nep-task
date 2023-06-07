@@ -80,7 +80,7 @@ export default function Index() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <h1 className='semi-bold text-4xl'>Crypto Converter</h1>
-      <div className="w-29 p-6 rounded-lg shadow  bg-gray-800 border-gray-700 ">
+      <div className="w-29 p-6 rounded-lg shadow bg-slate-50 border-slate-100 dark:bg-gray-800 dark:border-gray-700 ">
         <div className="sm:flex justify-between items-center ">
           <div>
             <label className="block mb-2 text-sm font-medium text-white ml-2">Nep</label>
