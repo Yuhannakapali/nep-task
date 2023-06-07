@@ -87,7 +87,7 @@ export default function Index() {
             <div className="flex">
               <input value={nep} onChange={handleNepChange} min={0} type="number" id="large-input" className="block  w-full p-5 mb-3 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
             </div>
-            <p className='text-dark  dark:text-white text-xs text-center'>1 Nep = 3 Busd</p>
+            <p className='text-dark  dark:text-white text-xs text-center'>1 Nep = 3 Busd</p>git
           </div>
           <div className='pl-10 pr-10 mt-5' >
           </div>
