@@ -141,7 +141,31 @@ export default function WalletModal({ isOpen, onClose, }: {
 
         {
           (hasProvider && !isConnected) && (
-            <Button onClick={handleConnect}>Connect</Button>
+            <>
+              <div className="text-center">
+                <h3 className="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">
+                  <p>
+                    Are you sure you want to connect your wallet ?
+                  </p>
+                </h3>
+                <div className="flex justify-center gap-4">
+                  <Button
+                    color="success"
+                    onClick={handleConnect}
+                  >
+                    Yes, I&apos;m sure
+                  </Button>
+                  <Button
+                    color="gray"
+                    onClick={onClose}
+                  >
+                    <p>
+                      No, cancel
+                    </p>
+                  </Button>
+                </div>
+              </div>
+            </>
           )
         }
 
@@ -153,7 +177,11 @@ export default function WalletModal({ isOpen, onClose, }: {
           )
         } */}
 
-        {isConnected && <Button className="mt-3 text-center" onClick={handleDisconnect} color={"failure"}> Disconnect</Button>}
+        {isConnected && (
+          <div className="flex justify-center mt-3">
+            <Button className="mt-3  " onClick={handleDisconnect} color={"failure"}> Disconnect</Button>
+          </div>
+        )}
       </Modal.Body>
 
     </Modal >
